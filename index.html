@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Listado de Pokémon</h1>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar Pokémon por nombre">
+      <button id="searchButton">Buscar</button>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="pokemon-list-container">
+      <!-- Lista de Pokémon -->
+      <div class="pokemon-list" id="pokemonList"></div>
+
+      <!-- Detalle del Pokémon -->
+      <div class="pokemon-details" id="pokemonDetails">
+        <h2>Selecciona un Pokémon</h2>
+      </div>
+    </div>
+
+    <!-- Paginación -->
+    <div class="pagination">
+      <button id="prevPage">Atrás</button>
+      <span id="currentPage">Página 1</span>
+      <button id="nextPage">Siguiente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
